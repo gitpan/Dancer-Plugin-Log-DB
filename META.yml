@@ -1,25 +1,26 @@
----
-abstract: 'log arbitrary messages into a database from within your Dancer application.'
+--- #YAML:1.0
+name:               Dancer-Plugin-Log-DB
+version:            0.03
+abstract:           log arbitrary messages into a database from within your Dancer application.
 author:
-  - 'Nikolay Aviltsev <navi@cpan.org>'
-build_requires:
-  ExtUtils::MakeMaker: 0
+    - Nikolay Aviltsev <navi@cpan.org>
+license:            perl
+distribution_type:  module
 configure_requires:
-  ExtUtils::MakeMaker: 0
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120630'
-license: perl
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
-name: Dancer-Plugin-Log-DB
-no_index:
-  directory:
-    - t
-    - inc
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
 requires:
-  Dancer: 1.3100
-  Dancer::Plugin::Database: 1.82
-  Test::More: 0.94
-  Time::Piece: 1.1501
-version: 0.02
+    Dancer:               1.0
+    Dancer::Plugin::Database:  0
+    DBD::SQLite:          0
+    Test::More:           0
+    Time::Piece:          0
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.57_05
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
